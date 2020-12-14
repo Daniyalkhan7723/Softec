@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/gray_background_ripple"
+    android:paddingStart="@dimen/_10sdp"
+    android:paddingEnd="@dimen/_5sdp"
+    android:paddingTop="@dimen/_10sdp"
+    android:paddingBottom="@dimen/_10sdp"
+    >
+
+    <TextView
+        android:id="@+id/food_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@id/nextlay"
+        android:maxLines="2"
+        android:paddingEnd="@dimen/_5sdp"
+        android:text="Mollie Stevenson"
+        android:textColor="@color/red_color"
+        android:textSize="@dimen/_13sdp" />
+
+    <TextView
+        android:id="@+id/food_item_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/food_item_name"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:visibility="gone"
+        android:text="kjascbnjkznc"
+        android:textColor="#C0C0C0"
+        android:textSize="@dimen/_10sdp" />
+
+
+    <LinearLayout
+        android:id="@+id/nextlay"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal"
+        android:gravity="center|end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/food_item_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$10.21"
+            android:textColor="@color/red_color"
+            android:textSize="@dimen/_13sdp" />
+
+        <ImageView
+            android:id="@+id/iv_next_indicator"
+            android:src="@drawable/ic_baseline_navigate_next"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

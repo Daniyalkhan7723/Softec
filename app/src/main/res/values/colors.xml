@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000</color>
+    <color name="colorPrimaryDark">#000</color>
+    <color name="colorAccent">#111111</color>
+
+    <!--My Color scheme-->
+    <color name="background_screen">#F3F3F5</color>
+    <color name="red_color">#D60000</color>
+    <color name="white">#fff</color>
+    <color name="black">#111111</color>
+    <color name="grey">#43222222</color>
+    <color name="dark_gray">#F7E3E3E4</color>
+    <color name="green_color">#00E676</color>
+
+    <color name="shimmer_back_color">#F7E3E3E4</color>
+    
+    <color name="color_green_cyan">#00897B</color>
+    <color name="color_yellow_gold">#880E4F</color>
+
+    <color name="parentcolor">#0064D3</color>
+
+</resources>

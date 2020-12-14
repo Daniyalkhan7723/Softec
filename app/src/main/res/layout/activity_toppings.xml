@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_screen"
+    tools:context=".Activities.Toppings">
+
+    <LinearLayout
+        android:id="@+id/mainLay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:background="@color/black">
+
+            <ImageView
+                android:id="@+id/toot_bar_back"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="match_parent"
+                android:onClick="back"
+                android:src="@drawable/ic_arrow_back_black_24dp" />
+
+            <TextView
+                android:id="@+id/tool_bar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Select 1 of 6 options"
+                android:textColor="#fff"
+                android:textSize="@dimen/_15sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/step_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/tool_bar_title"
+                android:text="Step 1 of 1"
+                android:textColor="#fff"
+                android:textSize="@dimen/_11sdp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/toot_bar_drawer"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:src="@drawable/drawer"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="@dimen/_15sdp">
+
+            <TextView
+                android:id="@+id/food_item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mollie Stevenson"
+                android:textColor="@color/red_color"
+                android:textSize="@dimen/_15sdp" />
+
+            <TextView
+                android:id="@+id/food_item_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/red_color"
+                android:textSize="@dimen/_15sdp" />
+
+            <TextView
+                android:id="@+id/food_item_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/food_item_name"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textColor="#C0C0C0"
+                android:textSize="@dimen/_10sdp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:id="@+id/selectedItemsScrollView"
+                android:visibility="visible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true">
+
+                <TextView
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingEnd="@dimen/_10sdp"
+                    android:id="@+id/tv_selected_items"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </ScrollView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/toppings_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:layout_below="@+id/selectedItemsScrollView"
+                android:layout_above="@id/bottomLay"
+                tools:listitem="@layout/topping_options_layout" />
+
+            <RelativeLayout
+                android:id="@+id/bottomLay"
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/add_button"
+                    android:visibility="visible"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:alpha="0.8"
+                    android:background="@drawable/red_button_ripple"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Add To Cart"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_15sdp"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/next_button"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:alpha="0.8"
+                    android:background="@drawable/red_button_ripple"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Next"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_15sdp"/>
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/networkParent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:id="@+id/networkproblemLay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/border_bottom"
+            android:padding="@dimen/_5sdp">
+
+            <ImageView
+                android:id="@+id/cloudIV"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_60sdp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/ic_cloud_off" />
+
+            <TextView
+                android:id="@+id/networkProMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cloudIV"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="Network problem or not connected..."
+                android:textSize="@dimen/_14sdp" />
+
+            <TextView
+                android:id="@+id/retry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/networkProMessage"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:gravity="center"
+                android:padding="@dimen/_5sdp"
+                android:text="Tap To RETRY!"
+                android:textColor="@color/red_color"
+                android:textSize="@dimen/_14sdp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

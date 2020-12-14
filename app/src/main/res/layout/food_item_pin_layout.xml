@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.facebook.shimmer.ShimmerFrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/shimmer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/food_item_pin_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_12sdp"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/item_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_toStartOf="@id/arrow_icon"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp" />
+
+            <ImageView
+                android:id="@+id/arrow_icon"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/arrow_down"
+                android:textColor="@color/black"/>
+
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/food_item_pin_layout_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/food_item_pin_layout"
+            android:background="@color/background_screen"
+            android:visibility="gone"
+            tools:listitem="@layout/home_list_row" />
+
+        <TextView
+            android:id="@+id/tv_noValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/food_item_pin_layout"
+            android:background="@color/background_screen"
+            android:gravity="center"
+            android:padding="@dimen/_20sdp"
+            android:text="Sorry! No Item Available Now...\nCheck The Other Items...\nWhile Keep Waiting..."
+            android:visibility="gone">
+
+        </TextView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="@color/grey" />
+
+    </RelativeLayout>
+
+
+</com.facebook.shimmer.ShimmerFrameLayout>

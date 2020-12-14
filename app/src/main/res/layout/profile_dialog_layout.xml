@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_250sdp"
+    android:layout_height="@dimen/_400sdp">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/profile_dialog_background"
+        >
+        <LinearLayout
+            android:layout_marginTop="@dimen/_180sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textStyle="italic"
+                android:textSize="@dimen/_14sdp"
+                android:textColor="#708090"
+                android:text="@string/receive_15_percent">
+            </TextView>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:background="@drawable/login_btn_background"
+                android:textColor="#fff"
+                android:text="@string/yes_opting_in"
+                android:textSize="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                ></Button>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:background="@drawable/login_btn_background"
+                android:textColor="#fff"
+                android:text="@string/yes_opting_in"
+                android:textSize="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                ></Button>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textStyle="italic"
+                android:textSize="@dimen/_14sdp"
+                android:textColor="#708090"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="@string/by_opting_in_your_agree">
+            </TextView>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

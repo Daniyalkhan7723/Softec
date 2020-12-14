@@ -1,0 +1,128 @@
+{
+  "status": "success",
+  "message": "message",
+  "restaurant_id": 24,
+  "menu": [
+    {
+      "id": 365,
+      "name": "Special-Deals",
+      "type": "deals",
+      "deal_list": [
+        {
+          "id": 100,
+          "name": "Pizza Deal",
+          "price": 100.0,
+          "description": "2 Chicken Burgers with 1 Half Litter Fanta With Extra Chips",
+          "deal_products": [
+            {
+              "product_id": 2,
+              "quantity": 2
+            },
+            {
+              "product_id": 3,
+              "quantity": 1
+            }
+          ],
+          "extra_addings": [
+            {
+              "id": 1,
+              "name": "Cheese Burger",
+              "price": "20",
+              "replace_of": 2
+            },
+            {
+              "id": 2,
+              "name": "Fried Chips",
+              "price": "0",
+              "replace_of": -1
+            }
+          ]
+        },
+        {
+          "id": 101,
+          "name": "Family Deal",
+          "price": 100.0,
+          "description": "2 Killo Karahi 1 1.5 Litter Coka Cola",
+          "deal_products": [
+            {
+              "product_id": 1,
+              "quantity": 2
+            },
+            {
+              "product_id": 4,
+              "quantity": 1
+            }
+          ],
+          "extra_addings": []
+        }
+      ],
+      "product_list": []
+    },
+    {
+      "id": 367,
+      "name": "Burgers",
+      "type": "products",
+      "deal_list": [],
+      "product_list": [
+        {
+          "id": 200,
+          "name": "Chicken Burger",
+          "price": "110",
+          "single_item": 0,
+          "product_size": []
+        },
+        {
+          "id": 201,
+          "name": "Zinger Burger",
+          "price": "150",
+          "single_item": 0,
+          "product_size": []
+        }
+      ]
+    },
+    {
+      "id": 369,
+      "name": "Chips",
+      "type": "products",
+      "deal_list": [],
+      "product_list": [
+        {
+          "id": 200,
+          "name": "Cheese Chips",
+          "price": "110",
+          "single_item": 1,
+          "product_size": [
+            {
+              "id": 6,
+              "name": "small",
+              "price": 50
+            },
+            {
+              "id": 7,
+              "name": "Large",
+              "price": 100
+            }
+          ]
+        },
+        {
+          "id": 200,
+          "name": "Fried Chips",
+          "price": "110",
+          "single_item": 1,
+          "product_size": [
+            {
+              "id": 6,
+              "name": "small",
+              "price": 50
+            },
+            {
+              "id": 7,
+              "name": "Large",
+              "price": 100
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

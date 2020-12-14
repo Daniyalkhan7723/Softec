@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/background_screen">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/selection"
+        android:text="Selection: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/sliding_tabs"
+        android:visibility="visible"
+        android:background="@color/background_screen"
+        app:tabSelectedTextColor="@color/red_color"
+        app:tabTextColor="#000"
+        app:tabIndicatorColor="@color/red_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabMode="scrollable" />
+
+
+    <RelativeLayout
+        android:layout_below="@+id/sliding_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:id="@+id/recycler_view"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/food_item_pin_layout"
+            >
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

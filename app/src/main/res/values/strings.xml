@@ -1,0 +1,112 @@
+<resources>
+    <string name="app_name">Softec</string>
+    <!--Sign-in screen strings-->
+    <string name="sign_in_now">SIGN IN NOW</string>
+    <string name="login_to_your_account">LOGIN TO YOUR ACCOUNT</string>
+    <string name="enter_your_phone_number_here">Enter your phone number here</string>
+    <string name="enter_your_email_here">Enter your email here</string>
+    <string name="abc_email">example@email.com</string>
+    <string name="by_submitting_your_number">By submitting your number, You confirm that you
+        have agree with the <u><font color='#D60000'>terms &amp; conditions</font></u></string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="edit_text_text">+921234567890</string>
+    <string name="order_place">Order Place</string>
+
+    <string name="terms_and_condition_text">This Site may contain links to other independent third-party Web sites ("Linked Sites”). These Linked Sites are provided solely as a convenience to our visitors. Such Linked Sites are not under our control, and we are not responsible for and does not endorse the content of such Linked Sites, including any information or materials contained on such Linked Sites. You will need to make your own independent judgment regarding your interaction with these Linked Sites.\n\nAll materials reproduced on this site speak as of the original date of publication or filing. The fact that a document is available on this site does not mean that the information contained in such document has not been modified or superseded by events or by a subsequent document or filing. We have no duty or policy to update any information or statements contained on this site and, therefore, such information or statements should not be relied upon as being current as of the date you access this site.\n\nThis Site may contain links to other independent third-party Web sites ("Linked Sites”). These Linked Sites are provided solely as a convenience to our visitors. Such Linked Sites are not under our control, and we are not responsible for and does not endorse the content of such Linked Sites, including any information or materials contained on such Linked Sites. You will need to make your own independent judgment regarding your interaction with these Linked Sites.\n\nAll materials reproduced on this site speak as of the original date of publication or filing. The fact that a document is available on this site does not mean that the information contained in such document has not been modified or superseded by events or by a subsequent document or filing. We have no duty or policy to update any information or statements contained on this site and, therefore, such information or statements should not be relied upon as being current as of the date you access this site.</string>
+    <string name="contact_us">All materials reproduced on this site speak as of the original date of publication or filing. The fact that a document is available on this site does not mean that the information contained in such document has not been modified or superseded by events or by a subsequent document or filing.</string>
+
+
+    <!--Confirmation screen strings-->
+    <string name="confirmation">CONFIRMATION</string>
+    <string name="we_have_sent_you_a_text">We have sent you a text message.</string>
+    <string name="please_enter_4_digit_number">Please enter 4-digit code below</string>
+    <string name="number">03070690117</string>
+    <string name="confirm">CONFIRM</string>
+    <string name="change_number"><u>Change Number</u></string>
+    <string name="title_activity_home">Home</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="home_second">Home Second</string>
+    <string name="title_activity_map">Map</string>
+
+    <!--profile dialog strings-->
+    <string name="receive_15_percent">Receive 15% off on your first order
+    and get unbelievable offers</string>
+    <string name="yes_opting_in">Yes OPTING-IN</string>
+    <string name="no_opting_out">NO OPTING-OUT</string>
+    <string name="by_opting_in_your_agree">By opting in you agree our terms and conditions</string>
+
+
+    <string-array name="minutes">
+        <item>00</item>
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+        <item>06</item>
+        <item>07</item>
+        <item>08</item>
+        <item>09</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+        <item>32</item>
+        <item>33</item>
+        <item>34</item>
+        <item>35</item>
+        <item>36</item>
+        <item>37</item>
+        <item>38</item>
+        <item>39</item>
+        <item>40</item>
+        <item>41</item>
+        <item>42</item>
+        <item>43</item>
+        <item>44</item>
+        <item>45</item>
+        <item>46</item>
+        <item>47</item>
+        <item>48</item>
+        <item>49</item>
+        <item>50</item>
+        <item>51</item>
+        <item>52</item>
+        <item>53</item>
+        <item>54</item>
+        <item>55</item>
+        <item>56</item>
+        <item>57</item>
+        <item>58</item>
+        <item>59</item>
+
+    </string-array>
+    <string name="title_activity_deliver_map">Map</string>
+
+</resources>

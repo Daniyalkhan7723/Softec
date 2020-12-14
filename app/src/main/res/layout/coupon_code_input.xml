@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/first_lay"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/_5sdp"
+    android:paddingBottom="@dimen/_5sdp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="@dimen/_10sdp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:gravity="center"
+        android:text="Coupon Discount"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_16sdp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/coupon_code_error_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:gravity="center"
+        android:text="Invalid Coupon Code, Try Another"
+        android:textColor="@color/red_color"
+        android:textSize="@dimen/_12sdp" />
+
+    <EditText
+        android:id="@+id/et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="Enter Coupon Code"
+        android:maxLines="1"
+        android:padding="@dimen/_15sdp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black" />
+
+    <RelativeLayout
+        android:id="@+id/btn_lay_first"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:background="@color/black"
+            android:text="Cancel"
+            android:textColor="@color/white"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/btnDone"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_toEndOf="@id/btnCancel"
+            android:background="@color/black"
+            android:tag="apply"
+            android:text="Check"
+            android:textColor="@color/white"
+            android:visibility="visible" />
+
+
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/voucher_progress"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:visibility="gone" />
+
+</LinearLayout>

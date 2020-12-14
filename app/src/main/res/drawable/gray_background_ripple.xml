@@ -1,0 +1,16 @@
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:color="#9E9B9B"
+    tools:ignore="NewApi">
+    <item>
+        <shape android:shape="rectangle" >
+            <solid android:color="@color/red_color"/>
+        </shape>
+    </item>
+    <item android:bottom="0.5dp" >
+        <shape android:shape="rectangle" >
+            <solid android:color="@color/background_screen" />
+        </shape>
+    </item>
+    <item android:drawable="@color/background_screen" />
+</ripple>

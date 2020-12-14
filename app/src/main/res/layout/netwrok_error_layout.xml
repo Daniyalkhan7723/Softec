@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/networkproblemLay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/border_bottom"
+        android:padding="@dimen/_5sdp">
+
+        <ImageView
+            android:id="@+id/cloudIV"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/ic_cloud_off" />
+
+        <TextView
+            android:id="@+id/networkProMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cloudIV"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="Network problem or not connected..."
+            android:textSize="@dimen/_14sdp" />
+
+        <TextView
+            android:id="@+id/retry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/networkProMessage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:text="Tap To RETRY!"
+            android:textColor="@color/red_color"
+            android:textSize="@dimen/_14sdp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

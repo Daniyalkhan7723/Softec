@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rv_extra_adding_parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_10sdp">
+
+    <ImageView
+        android:id="@+id/iv_extra_adding"
+        android:layout_width="@dimen/_18sdp"
+        android:layout_height="@dimen/_18sdp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_baseline_uncheck_box" />
+
+    <TextView
+        android:id="@+id/tv_product_size_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_toStartOf="@+id/tv_extra_adding_price"
+        android:layout_toEndOf="@+id/iv_extra_adding"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="Large Chips"
+        android:textColor="@color/red_color"
+        android:textSize="@dimen/_15sdp" />
+
+    <TextView
+        android:id="@+id/tv_extra_adding_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:text="$50"
+        android:textColor="@color/red_color"
+        android:textSize="@dimen/_13sdp" />
+
+</RelativeLayout>

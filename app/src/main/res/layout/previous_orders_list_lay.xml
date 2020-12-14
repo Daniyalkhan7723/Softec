@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/_2sdp">
+
+    <RelativeLayout
+        android:id="@+id/history_first_lay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:id="@+id/toolbar_layout0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            android:padding="@dimen/_10sdp">
+
+            <ImageView
+                android:id="@+id/tool_bar_back0"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_baseline_close" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Your Previous Orders"
+                android:textColor="#fff"
+                android:textSize="@dimen/_14sdp" />
+
+        </RelativeLayout>
+
+        <ProgressBar
+            android:id="@+id/previous_pb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_no_order_yet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="No Previous Order Yet"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/previous_orders_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/toolbar_layout0"
+            tools:listitem="@layout/previous_order" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/history_second_lay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            android:padding="@dimen/_10sdp">
+
+            <ImageView
+                android:id="@+id/tool_bar_back"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_arrow_back_black_24dp" />
+
+            <TextView
+                android:id="@+id/topTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="SOFTEC"
+                android:textColor="#fff"
+                android:textSize="@dimen/_14sdp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toolbar_layout"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/_5sdp"
+                android:text="Date: "
+                android:textColor="@color/red_color" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/collection_list_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_170sdp"
+                android:layout_below="@id/tv_date"
+                android:background="@drawable/gray_background_ripple"
+                tools:listitem="@layout/j_collection_list_row" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/collection_list_recycler"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center|start"
+                    android:padding="@dimen/_5sdp"
+                    android:text="Total Amount"
+                    android:textColor="@color/red_color" />
+
+                <TextView
+                    android:id="@+id/tv_total_amount"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center|start"
+                    android:padding="@dimen/_5sdp"
+                    android:text="$200.0"
+                    android:textColor="@color/red_color" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/collection_list_recycler"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center|start"
+                    android:padding="@dimen/_5sdp"
+                    android:text="Total Paid"
+                    android:textColor="@color/red_color" />
+
+                <TextView
+                    android:id="@+id/tv_total_paid"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center|start"
+                    android:padding="@dimen/_5sdp"
+                    android:text="$200.0"
+                    android:textColor="@color/red_color" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/collection_list_recycler"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center|start"
+                    android:padding="@dimen/_5sdp"
+                    android:text="Payment Type"
+                    android:textColor="@color/red_color" />
+
+                <TextView
+                    android:id="@+id/tv_payment_type"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center|start"
+                    android:padding="@dimen/_5sdp"
+                    android:text="Credit Card"
+                    android:textColor="@color/red_color" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/discountLay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/collection_list_recycler"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/discount_type"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center|start"
+                    android:padding="@dimen/_5sdp"
+                    android:text="Discount"
+                    android:textColor="@color/red_color" />
+
+                <TextView
+                    android:id="@+id/tv_discount"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center|start"
+                    android:padding="@dimen/_5sdp"
+                    android:text="11%"
+                    android:textColor="@color/red_color" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/reuse_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:text="RE_USE this Order" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
